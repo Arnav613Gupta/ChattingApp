@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone_signup_activity"
+    android:orientation="vertical"
+    android:background="@color/verylightcream"
+    android:padding="5dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up "
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkbrownish"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="@color/darkbrownish"
+                app:cardElevation="30dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@color/verylightcream">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Enter Your Mobile No: "
+                        android:gravity="left"
+                        android:padding="15dp"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/brownish"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/chooseCountryCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:paddingTop="10dp"
+
+                            android:textSize="25sp"/>
+                        <EditText
+                            android:id="@+id/edt_Phone_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/cream"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:letterSpacing="0.1"
+                            android:textStyle="bold"
+                            android:layout_marginStart="5dp"
+                            android:inputType="phone"
+                            android:hint=" XXXXXXXXXXX "
+                            android:maxLength="10"
+                            android:textSize="25sp"/>
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnContinue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="right"
+                        android:text="Continue"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="?selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userdesignCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:padding="70dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfilePic_ChatLluout"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/blank_profile_pic"
+            app:civ_border_width="3dp"
+            android:layout_gravity="left"
+
+            app:civ_border_color="@color/brownish" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/ProfileName_ChatLluout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ProfilelastMessage_ChatLluout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Your Last Message"
+                        android:textStyle="italic"/>
+                    <TextView
+                        android:id="@+id/Profiledate_ChatLluout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00 am"
+                        android:layout_gravity="right"
+                        android:textSize="14sp"
+                        android:textColor="@color/brownish"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+

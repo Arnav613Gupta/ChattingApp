@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/search_main"
+        android:title="Search"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/newGrop_main"
+        android:title="New Group"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/broadCast_main"
+        android:title="Broadcast"
+        app:showAsAction="never"/>
+    <item android:id="@+id/Settings_main"
+        android:title="Settings"
+        app:showAsAction="never"/>
+</menu>

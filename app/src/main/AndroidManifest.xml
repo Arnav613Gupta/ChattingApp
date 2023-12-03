@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/chat_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/chat_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.ChattingApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingActity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectPeopleForGroup"
+            android:exported="false" />
+        <activity
+            android:name=".group_chat_detail_acctivity"
+            android:exported="false" />
+        <activity
+            android:name=".Group_Name_Activity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.chattingapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Chat_detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".NameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phone_signup_activity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVerificationActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@style/toolbarPresent" />
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verylightcream"
+    tools:context=".SettingActity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:padding="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/setting_img_filterView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/blank_profile_pic"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:id="@+id/setting_img_add"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/baseline_add_circle_24"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="-70dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="10dp"
+                    android:maxEms="8"
+                    android:id="@+id/settingUserNAme"
+                    android:textStyle="italic"
+                    android:textColor="@color/darkbrownish"
+                    android:text="Name"
+                    android:textSize="36sp"/>
+
+                <ImageView
+                    android:id="@+id/setting_btn_nameedit"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/pen_svgrepo_com" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verylightcream"
+                android:hint="Your Name"
+                android:textSize="32sp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:id="@+id/nameeditviewsetting"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setting_UpdateProfile"
+                android:text="Update Profile"
+                android:textSize="32sp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/lightcream"
+                android:textColor="@color/red"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setting_signOut"
+                android:text="Sign Out"
+                android:textSize="32sp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/lightcream"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+
+
+
+
+
+</ScrollView>

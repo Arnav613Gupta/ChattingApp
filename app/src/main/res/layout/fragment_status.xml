@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Status_Fragment">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/circularImageView_user"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:padding="6dp"
+        android:src="@mipmap/chat_app_icon" />
+
+
+        <com.devlomi.circularstatusview.CircularStatusView
+            android:id="@+id/circular_status_view_user"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            app:portion_color="@color/darkbrownish"
+            app:portion_spacing="4dp"
+            app:portion_width="4dp"
+            app:portions_count="8" />
+
+        <ImageView
+            android:id="@+id/deleteStatusImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/baseline_delete_24"
+            app:tint="@color/darkbrownish" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativeLayout"
+        android:id="@+id/statusRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/status_item_layout"
+        android:padding="10dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/floatbtnStatusWrite"
+        android:elevation="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/lightcream"
+        android:src="@drawable/pen_svgrepo_com"
+        />
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone_signup_activity"
+    android:orientation="vertical"
+    android:background="@color/verylightcream"
+    android:padding="5dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up "
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkbrownish"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="@color/darkbrownish"
+                app:cardElevation="30dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@color/verylightcream">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+                    <TextView
+                        android:id="@+id/txtSendingOtp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/otp_no_showing_text"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkbrownish"/>
+                    <TextView
+                        android:id="@+id/txtPhoneNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="00000000000"
+                        android:letterSpacing="0.1"
+                        android:padding="5dp"
+                        android:textSize="19sp"
+                        android:textStyle="italic"
+                        android:textColor="#E53935"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/llyoutOtp"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Enter your OTP is"
+                            android:gravity="left"
+                            android:padding="10dp"
+                            android:textSize="19sp"
+                            android:textColor="@color/darkbrownish"/>
+
+                        <EditText
+                            android:id="@+id/edt_otp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="000000"
+                            android:maxLength="6"
+                            android:layout_gravity="center"
+                            android:letterSpacing="1"
+                            android:inputType="number"
+                            android:textSize="22sp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"/>
+
+
+                        <Button
+                            android:id="@+id/btnVerify"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:text="Verify"
+                            android:textSize="20sp"
+                            android:textStyle="italic"
+                            android:textColor="@color/white"/>
+                        <Button
+                            android:id="@+id/btnSendAgainOtp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:text="Resend OTP"
+                            android:textSize="20sp"
+                            android:textStyle="italic"
+                            android:textColor="@color/white"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <ProgressBar
+                android:id="@+id/progress_bar_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/darkbrownish"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

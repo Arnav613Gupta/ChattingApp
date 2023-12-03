@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Group_Fragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       tools:listitem="@layout/rows_chat_user_layout"
+       android:id="@+id/group_chat_recycleView"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/verylightcream"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/addgroupbtn"
+            android:background="@drawable/baseline_person_add_alt_1_24"
+            android:padding="15dp"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

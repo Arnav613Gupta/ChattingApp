@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".group_chat_detail_acctivity"
+    android:background="@drawable/chat_background">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewsend_group_Chatdetail"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp">
+
+            <EditText
+                android:id="@+id/edt_msg_group_chatdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Type Your Message..."
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_link_group_chatDeatail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:rotation="45"
+                android:src="@drawable/baseline_insert_link_24" />
+
+            <ImageView
+                android:id="@+id/img_cam_group_chat_detail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/baseline_camera_alt_24"
+                app:tint="@color/brownish" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageViewsend_group_Chatdetail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/arrowbackground"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/chat_detail_group_recycleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/brownish">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/chat_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back_arrow_group_chat_detail_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pic_group_chat_detail_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+
+                    android:layout_marginStart="7dp"
+                    android:src="@drawable/blank_profile_pic"
+                    app:civ_border_color="@color/cream"
+                    app:civ_border_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/back_arrow_group_chat_detail_img"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_group_View"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:rotation="90"
+                    android:src="@drawable/baseline_more_horiz_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_group_View2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_add_ic_call_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/image_group_View"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/name_group_chat_detail_text"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center_vertical"
+                    android:text="MyName"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_plus_group_add"
+                    app:layout_constraintStart_toEndOf="@+id/pic_group_chat_detail_img"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_plus_group_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/baseline_add_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/image_group_View2"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_detail_group_recycleView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

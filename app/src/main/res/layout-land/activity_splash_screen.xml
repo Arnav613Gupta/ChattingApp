@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/verylightcream"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/splashscreenicon"
+            android:layout_width= "150dp"
+            android:layout_height="150dp"
+            app:roundPercent="1"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/chat_app_icon_round"
+            />
+
+        <TextView
+            android:id="@+id/splashscreengreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="1dp"
+            android:text="@string/greeting"
+            android:lineSpacingExtra="7dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textColor="@color/chat_app_icon_background"
+            android:textSize="25sp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
